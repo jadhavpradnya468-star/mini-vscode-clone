@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ultimate VS Code Clone</title>
+
+  <!-- CodeMirror -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.13/codemirror.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.13/codemirror.min.js"></script>
+
+  <!-- Modes -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.13/mode/xml/xml.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.13/mode/css/css.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.13/mode/javascript/javascript.min.js"></script>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app">
+
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <h3>📁 Files</h3>
+    <div id="fileList"></div>
+    <button onclick="addFile()">+ New File</button>
+  </div>
+
+  <!-- Editor -->
+  <div class="editor">
+    <div class="topbar">
+      <button onclick="runCode()">▶ Run</button>
+      <button onclick="downloadCode()">⬇ Download</button>
+    </div>
+
+    <textarea id="code"></textarea>
+  </div>
+
+  <!-- Output -->
+  <iframe id="output"></iframe>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

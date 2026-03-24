@@ -75,6 +75,9 @@ cd mini-vscode-clone
 * CodeMirror handles editing, highlighting, and autocomplete
 * Prettier formats code dynamically
 ---
+## Live Demo of project :
+link:https://jadhavpradnya468-star.github.io/mini-vscode-clone/
 
+--
 ## 👨‍💻 Author
 jadhavpradnya468-star
